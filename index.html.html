@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Landing Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background-color: #f4f6f8;
+      color: #333;
+    }
+
+    header {
+      background: #2b6cb0;
+      color: #fff;
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 24px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 16px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      height: 80vh;
+      background: linear-gradient(to right, #2b6cb0, #63b3ed);
+      color: white;
+      padding: 20px;
+    }
+
+    .hero h2 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 30px;
+      max-width: 600px;
+    }
+
+    .hero button {
+      padding: 12px 30px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      background: #fff;
+      color: #2b6cb0;
+      cursor: pointer;
+    }
+
+    .hero button:hover {
+      background: #edf2f7;
+    }
+
+    .features {
+      display: flex;
+      justify-content: space-around;
+      padding: 50px 20px;
+      background: #fff;
+    }
+
+    .feature-box {
+      width: 30%;
+      background: #f7fafc;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .feature-box h3 {
+      margin-bottom: 10px;
+      color: #2b6cb0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #2b6cb0;
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .features {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .feature-box {
+        width: 80%;
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>MyLanding</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Features</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome to Our Landing Page</h2>
+    <p>
+      This is a simple and clean HTML landing page design suitable for
+      students, beginners, and mini projects.
+    </p>
+    <button>Get Started</button>
+  </section>
+
+  <section class="features">
+    <div class="feature-box">
+      <h3>Fast</h3>
+      <p>Lightweight and fast loading design using pure HTML and CSS.</p>
+    </div>
+    <div class="feature-box">
+      <h3>Responsive</h3>
+      <p>Works smoothly on mobile, tablet, and desktop screens.</p>
+    </div>
+    <div class="feature-box">
+      <h3>Easy</h3>
+      <p>Easy to understand code, perfect for beginners.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 MyLanding. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
